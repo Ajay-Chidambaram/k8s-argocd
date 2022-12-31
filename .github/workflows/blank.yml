@@ -37,6 +37,17 @@ jobs:
         run: |
           sudo apt-get -y update
           sudo apt-get -y install devscripts dpkg-dev 
+     
+      - name: sed
+        run: sed -i -e '/deb-src/s/^#//g' /etc/apt/sources.list
+     
       - name: Run a multi-line script
         run: |
-          cat /etc/apt/sources.list
+            cat /etc/apt/sources.list
+          
+      - name: cd to root
+        run: cd
+        
+      
+      - name: docker command
+        run: sudo docker --version
