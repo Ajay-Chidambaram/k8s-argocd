@@ -15,7 +15,7 @@ spec:
         app: odoo
     spec:
       containers:
-      - name: odoo
-        image: chidambaram27/odoo:20
-        ports:
-        - containerPort: 8069
+        - name: odoo
+          image: chidambaram27/odoo:25
+          ports:
+            - containerPort: 8069
