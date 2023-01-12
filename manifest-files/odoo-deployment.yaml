@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
         - name: odoo
-          image: chidambaram27/odoo:25
+          image: chidambaram27/odoo:26
           ports:
             - containerPort: 8069
